@@ -1,2 +1,2 @@
-import remixRunRouter from "@remix-run/router";
-console.log("worker: typeof remixRunRouter", typeof remixRunRouter);
+import react from "react";
+console.log("worker says: typeof react", typeof react);

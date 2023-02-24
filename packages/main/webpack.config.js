@@ -25,8 +25,8 @@ module.exports = {
     // }),
     new UmdPlugin({
       remotes: {
-        "@remix-run/router":
-          "app5remixRouter@https://cdn.jsdelivr.net/npm/@remix-run/router@1.0.3/dist/router.umd.min.js",
+        react:
+          "react@https://unpkg.com/react@16.14.0/umd/react.production.min.js",
       },
     }),
     new CopyPlugin({

@@ -1,2 +1,2 @@
-console.log("bootstrapping the worker");
+console.log("bootstrapping the worker...");
 import("./worker-main");
