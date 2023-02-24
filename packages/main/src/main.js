@@ -1,10 +1,4 @@
-import { get_count } from "counter";
-console.log("get_count", get_count());
+import remixRunRouter from "@remix-run/router";
+console.log("main: typeof remixRunRouter", typeof remixRunRouter);
 
-const messagesEl = document.getElementById("messages");
-
-const worker = new Worker(new URL("./worker.js", import.meta.url));
-
-worker.addEventListener("message", ({ data }) => {
-  messagesEl.innerText += `${data}\n`;
-});
+new Worker(new URL("./worker.js", import.meta.url));

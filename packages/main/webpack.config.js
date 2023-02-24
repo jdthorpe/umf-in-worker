@@ -1,6 +1,6 @@
-const {
-  container: { ModuleFederationPlugin },
-} = require("webpack");
+// const {
+//   container: { ModuleFederationPlugin },
+// } = require("webpack");
 const CopyPlugin = require("copy-webpack-plugin");
 const { UmdPlugin } = require("universal-module-federation-plugin");
 
@@ -25,7 +25,8 @@ module.exports = {
     // }),
     new UmdPlugin({
       remotes: {
-        counter: "counter@//localhost:3003/main.js",
+        "@remix-run/router":
+          "app5remixRouter@https://cdn.jsdelivr.net/npm/@remix-run/router@1.0.3/dist/router.umd.min.js",
       },
     }),
     new CopyPlugin({
