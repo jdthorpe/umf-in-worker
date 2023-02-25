@@ -24,6 +24,7 @@ module.exports = {
     //   },
     // }),
     new UmdPlugin({
+      workerFiles: [/\.?worker\.js$/],
       remotes: {
         react:
           "react@https://unpkg.com/react@16.14.0/umd/react.production.min.js",
